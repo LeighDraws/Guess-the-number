@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Guess Le Nombre</title>
+</head>
+<body>
+    <section>
+        
+        <form id="form">
+            <div>
+                <input type="radio" id="facile" name="mode" value="facile" checked />
+                <label for="facile">Facile</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="moyen" name="mode" value="moyen" />
+                <label for="moyen">Moyen</label>
+              </div>
+            
+              <div>
+                <input type="radio" id="difficile" name="mode" value="difficile" />
+                <label for="difficile">Difficile</label>
+              </div>
+            <label for="guess">Écris ton chiffre ici :</label>
+            <input id="guess" type="number">
+            <input type="submit" value="Envoyer">
+        </form>
+        <div>
+            <p id="message">Essais : <span id="tries">0</span></p>
+            <span id="plusmoins"></span>
+        </div>
+    </section>
+</body>
+</html>
